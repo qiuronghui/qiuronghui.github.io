@@ -693,6 +693,9 @@ commond 定义命令按钮</code></pre><h3 id="3、HTML全局属性-global-attri
 <h3 id="6、label都有哪些作用？举例子说明"><a href="#6、label都有哪些作用？举例子说明" class="headerlink" title="6、label都有哪些作用？举例子说明"></a>6、label都有哪些作用？举例子说明</h3><p>label 通常用来关联一个表单控件 点击label文字，可以勾选checkbox</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"hobby"</span>&gt;</span>爱好<span class="tag">&lt;<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"bobby"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">value</span>=<span class="string">"0"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"name"</span>&gt;</span></span><br><span class="line">    名字：</span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"name"</span> <span class="attr">type</span>=<span class="string">"text"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="7、简述你对BFC的理解"><a href="#7、简述你对BFC的理解" class="headerlink" title="7、简述你对BFC的理解"></a>7、简述你对BFC的理解</h3><p> BFC是CSS中的一个渲染机制，BFC相当于一个盒子，内部的元素与外界的元素互不干扰，它不会影响外部的布局，外部的布局也不会影响到它。</p>
+<p> 形成条件：<br> 根元素，也就是html元素<br> float 为left right<br> display 为 inline-block table-cell flex table-caption inline-flex<br> overflow 为hidden  scroll auto<br>position 为 absolute fixed</p>
+<p>特性：<br>内部的盒子会在垂直方向上一个接一个的放置<br>对于同一个BFC的俩个相邻的盒子的margin会发生重叠，与方向无关。<br>每个元素的左外边距与包含块的左边界相接触（从左到右），即使浮动元素也是如此<br>BFC的区域不会与float的元素区域重叠<br>计算BFC的高度时，浮动子元素也参与计算<br>BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之亦然</p>
 
       
     </div>
@@ -894,8 +897,6 @@ commond 定义命令按钮</code></pre><h3 id="3、HTML全局属性-global-attri
       <ul class="entry">
         
           <li><a class="flat-box" title="/categories/JS大全/" href="/categories/JS大全/"><div class='name'>JS大全</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/你好/" href="/categories/你好/"><div class='name'>你好</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box" title="/categories/面试专用/" href="/categories/面试专用/"><div class='name'>面试专用</div><div class='badge'>(4)</div></a></li>
         
